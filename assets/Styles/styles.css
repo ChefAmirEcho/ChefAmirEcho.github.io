@@ -1,0 +1,114 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #1a1a1a; /* Deep black background */
+    color: #f0e6c9; /* Warm off-white text */
+    line-height: 1.6;
+}
+
+/* Navbar Styles */
+.navbar {
+    background-color: #2b1b3b; /* Dark purple */
+    padding: 1rem;
+    position: fixed;
+    width: 100%;
+    top: 0;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.navbar a {
+    color: #d4af37; /* Gold links */
+    text-decoration: none;
+    font-size: 1.1rem;
+    text-shadow: 0 0 5px #d4af37; /* Subtle gold glow */
+    transition: text-shadow 0.3s ease;
+}
+
+.navbar a:hover {
+    text-shadow: 0 0 10px #d4af37, 0 0 15px #d4af37; /* Enhanced glow on hover */
+}
+
+/* Main Content */
+.container {
+    margin: 100px auto 50px;
+    max-width: 800px;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Image Box */
+.image-box {
+    width: 300px;
+    height: 300px;
+    margin: 20px auto;
+    overflow: hidden;
+    border: 2px solid #d4af37; /* Gold border */
+    box-shadow: 0 0 10px #d4af37; /* Subtle gold glow */
+    border-radius: 50%; /* Circular like a vinyl record */
+}
+
+.image-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+/* portfolio Section */
+.portfolio {
+    background-color: #2b1b3b; /* Dark purple container */
+    padding: 20px;
+    border-radius: 5px;
+    margin: 20px 0;
+    box-shadow: 0 0 5px #d4af37; /* Minimal gold glow */
+}
+
+.portfolio h2 {
+    margin-bottom: 15px;
+    color: #d4af37; /* Gold heading */
+    text-shadow: 0 0 5px #d4af37; /* Subtle gold glow */
+    cursor: pointer; /* Indicate clickable */
+    transition: text-shadow 0.3s ease;
+}
+
+.portfolio h2:hover {
+    text-shadow: 0 0 10px #d4af37, 0 0 15px #d4af37; /* Enhanced glow on hover */
+}
+
+.audio-list {
+    display: none; /* Hidden by default */
+    transition: all 0.3s ease;
+}
+
+.audio-list.active {
+    display: block; /* Shown when active */
+}
+
+.audio-item {
+    margin: 15px 0;
+    padding: 10px;
+    border-bottom: 1px solid #4b2b5b; /* Deeper purple border */
+}
+
+/* Footer */
+footer {
+    background-color: #2b1b3b; /* Dark purple footer */
+    color: #f0e6c9; /* Warm off-white text */
+    padding: 1rem;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    text-shadow: 0 0 5px #d4af37; /* Subtle gold glow */
+}
