@@ -1,19 +1,47 @@
+@font-face {
+    font-family: 'B Zar';
+    src: url('../fonts/B\ Zar.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'B Zar Bold';
+    src: url('../fonts/B\ Zar\ Bold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Optima';
+    src: url('../fonts/OPTIMA.TTF') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Arial, sans-serif;
+    font-family: 'B Zar', 'B Zar Bold', 'Optima';
 }
 
 body {
-    background-color: #1a1a1a; /* Deep black background */
-    color: #f0e6c9; /* Warm off-white text */
+    background-color: #1a1a1a;
+    /* Deep black background */
+    color: #f0e6c9;
+    /* Warm off-white text */
     line-height: 1.6;
+}
+
+span {
+    font-family: 'B Zar Bold';
 }
 
 /* Navbar Styles */
 .navbar {
-    background-color: #2b1b3b; /* Dark purple */
+    background-color: #2b1b3b;
+    /* Dark purple */
     padding: 1rem;
     position: fixed;
     width: 100%;
@@ -28,15 +56,18 @@ body {
 }
 
 .navbar a {
-    color: #d4af37; /* Gold links */
+    color: #d4af37;
+    /* Gold links */
     text-decoration: none;
     font-size: 1.1rem;
-    text-shadow: 0 0 5px #d4af37; /* Subtle gold glow */
+    text-shadow: 0 0 5px #d4af37;
+    /* Subtle gold glow */
     transition: text-shadow 0.3s ease;
 }
 
 .navbar a:hover {
-    text-shadow: 0 0 10px #d4af37, 0 0 15px #d4af37; /* Enhanced glow on hover */
+    text-shadow: 0 0 10px #d4af37, 0 0 15px #d4af37;
+    /* Enhanced glow on hover */
 }
 
 /* Main Content */
@@ -47,15 +78,27 @@ body {
     text-align: center;
 }
 
+.title-box {
+    background-color: #2b1b3b;
+    padding: 20px;
+    border-radius: 5px;
+    margin: 20px 0;
+    box-shadow: 0 0 5px #d4af37;
+    overflow: auto;
+}
+
 /* Image Box */
 .image-box {
     width: 300px;
     height: 300px;
     margin: 20px auto;
     overflow: hidden;
-    border: 2px solid #d4af37; /* Gold border */
-    box-shadow: 0 0 10px #d4af37; /* Subtle gold glow */
-    border-radius: 50%; /* Circular like a vinyl record */
+    border: 2px solid #d4af37;
+    /* Gold border */
+    box-shadow: 0 0 10px #d4af37;
+    /* Subtle gold glow */
+    border-radius: 50%;
+    /* Circular like a vinyl record */
 }
 
 .image-box img {
@@ -67,48 +110,107 @@ body {
 
 /* portfolio Section */
 .portfolio {
-    background-color: #2b1b3b; /* Dark purple container */
+    background-color: #2b1b3b;
+    /* Dark purple container */
     padding: 20px;
     border-radius: 5px;
     margin: 20px 0;
-    box-shadow: 0 0 5px #d4af37; /* Minimal gold glow */
+    box-shadow: 0 0 5px #d4af37;
+    /* Minimal gold glow */
 }
 
 .portfolio h2 {
     margin-bottom: 15px;
-    color: #d4af37; /* Gold heading */
-    text-shadow: 0 0 5px #d4af37; /* Subtle gold glow */
-    cursor: pointer; /* Indicate clickable */
+    color: #d4af37;
+    /* Gold heading */
+    text-shadow: 0 0 5px #d4af37;
+    /* Subtle gold glow */
+    cursor: pointer;
+    /* Indicate clickable */
     transition: text-shadow 0.3s ease;
 }
 
 .portfolio h2:hover {
-    text-shadow: 0 0 10px #d4af37, 0 0 15px #d4af37; /* Enhanced glow on hover */
+    text-shadow: 0 0 10px #d4af37, 0 0 15px #d4af37;
+    /* Enhanced glow on hover */
 }
 
+.about {
+    background-color: #2b1b3b;
+    padding: 20px;
+    border-radius: 5px;
+    margin: 20px 0;
+    box-shadow: 0 0 5px #d4af37;
+    overflow: auto;
+}
+
+.about h2 {
+    text-align: center;
+    margin-bottom: 15pt;
+    font-family: 'Optima';
+}
+
+.about-persian {
+    font-size: 12pt;
+    width: 48%;
+    text-align: justify;
+    /* Changed from right to justify */
+    text-align-last: right;
+    /* Aligns last line to right for Persian */
+    float: right;
+    padding-right: 2%;
+    position: relative;
+    direction: rtl;
+    /* Right-to-left for Persian */
+}
+
+.about-persian p {
+    font-family: 'B Zar';
+}
+
+.about-english {
+    font-size: 12pt;
+    width: 48%;
+    text-align: justify;
+    text-align-last: left;
+    float: left;
+    padding-left: 2%;
+    direction: ltr;
+}
+
+.about-english p {
+    font-family: 'Optima';
+}
+
+
 .audio-list {
-    display: none; /* Hidden by default */
+    display: none;
+    /* Hidden by default */
     transition: all 0.3s ease;
 }
 
 .audio-list.active {
-    display: block; /* Shown when active */
+    display: block;
+    /* Shown when active */
 }
 
 .audio-item {
     margin: 15px 0;
     padding: 10px;
-    border-bottom: 1px solid #4b2b5b; /* Deeper purple border */
+    border-bottom: 1px solid #4b2b5b;
 }
 
 /* Footer */
 footer {
-    background-color: #2b1b3b; /* Dark purple footer */
-    color: #f0e6c9; /* Warm off-white text */
+    background-color: #2b1b3b;
+    /* Dark purple footer */
+    color: #f0e6c9;
+    /* Warm off-white text */
     padding: 1rem;
     text-align: center;
     position: fixed;
     bottom: 0;
     width: 100%;
-    text-shadow: 0 0 5px #d4af37; /* Subtle gold glow */
+    text-shadow: 0 0 5px #d4af37;
+    /* Subtle gold glow */
 }
